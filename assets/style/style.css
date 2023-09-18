@@ -182,12 +182,15 @@ nav .fa {
 
 .course-col {
     flex-basis: 31%;
-    background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+}
+
+.course-word {
+    background: #fff3f3;
 }
 
 .course-col h3 {
@@ -196,7 +199,7 @@ nav .fa {
     margin: 10px 0;
 }
 
-.course-col:hover {
+.course-word:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -210,6 +213,22 @@ nav .fa {
 .my-image {
     height: auto;
     border-radius: 50%;
+    /* Add a default border style */
+    border: 5px solid transparent;
+    /* Add a default shadow */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    /* Add a transition for smooth effects */
+    transition: border 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.my-image:hover,
+.my-image:target,
+.my-image:active {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+    /* background-color: #fff3f3; */
+    border: 2px solid #fff3f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* FOR MOBILE @media */
